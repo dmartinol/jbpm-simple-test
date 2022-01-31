@@ -8,5 +8,29 @@
         <source>PROJECT</source>
       </metadata>
     </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>fuse-public</id>
+        <url>https://repository.jboss.org/nexus/content/groups/fs-public/</url>
+        <source>SETTINGS</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>redhat-ga</id>
+        <url>https://maven.repository.redhat.com/ga/</url>
+        <source>SETTINGS</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>local</id>
+        <url>/home/dtorresf/.m2/repository</url>
+        <source>LOCAL</source>
+      </metadata>
+    </repository>
   </repositories>
 </project-repositories>
