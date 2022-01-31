@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<appender name="consoleAppender" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%C [%t] %-5p %m%n</pattern>
+		</encoder>
+	</appender>
+	
+	<logger name="org.kie" level="info" />
+	<logger name="org.drools" level="info" />
+	<logger name="org.jbpm" level="info" />
+	<logger name="com.myspace" level="debug" />
+	
+	<logger name="org.hibernate" level="off" />
+	
+	
+	<root level="info">
+		<appender-ref ref="consoleAppender" />
+	</root>
+	
+</configuration>
