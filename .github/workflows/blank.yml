@@ -25,19 +25,12 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
         with:
-          submodules: 'true'
+          submodules: recursive
 
       - uses: whelk-io/maven-settings-xml-action@v20
         with:
           repositories: '[{ "id": "redhat-ga", "url": "https://maven.repository.redhat.com/ga" }]'
           plugin_repositories: '[{ "id": "redhat-ga", "url": "https://maven.repository.redhat.com/ga" }]'
-
-      - name: Pull & update submodules recursively
-        run: |
-          git submodule update --init --recursive
-          git submodule update --recursive --remote
-          pwd
-          ls
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
