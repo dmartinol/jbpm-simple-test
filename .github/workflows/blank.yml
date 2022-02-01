@@ -37,7 +37,6 @@ jobs:
           git submodule update --init --recursive
           git submodule update --recursive --remote
 
-      - name: Commit
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: |
