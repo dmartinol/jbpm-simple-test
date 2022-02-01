@@ -27,6 +27,10 @@ jobs:
         with:
           submodules: 'true'
 
+      - uses: whelk-io/maven-settings-xml-action@v20
+        with:
+          repositories: '[{ "id": "redhat-ga", "url": "https://maven.repository.redhat.com/ga" }]'
+
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
